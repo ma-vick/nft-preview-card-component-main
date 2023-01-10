@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --active-color: hsl(178, 100%, 50%);
+    --font-color: hsl(215, 51%, 70%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: var(--font-color);
+    background-color: var(--main-bg);
+}
+
+.container {
+    margin: 50px auto;
+    box-shadow: 0 0 30px 5px var(--card-bg);
+    background-color: var(--card-bg);
+    max-width: 400px;
+    padding: 22px 28px;
+    border-radius: 18px
+}
+
+.principal-img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: .8em 0;
+}
+
+h1:hover {
+    color: var(--active-color);
+    cursor: pointer;
+}
+
+.description {
+    margin-right: 9px;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.informations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-value {
+    font-weight: 600;
+    color: var(--active-color);
+    margin-left: .5em;
+}
+
+.icon-clock {
+    margin-right: .3em;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    padding: 16px 0 10px 0;
+    margin-top: 30px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.img-creator {
+    width: 12%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.creator-name a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.creator-name a:hover {
+    color: var(--active-color);
+    cursor: pointer;
+}

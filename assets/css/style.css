@@ -27,17 +27,49 @@ body {
 
 .container {
     margin: 50px auto;
-    box-shadow: 0 0 30px 5px var(--card-bg);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.35);
     background-color: var(--card-bg);
     max-width: 400px;
     padding: 22px 28px;
     border-radius: 18px
 }
 
+.image-container {
+    position: relative;
+}
+
 .principal-img {
+    display: block;
     border-radius: 8px;
     width: 100%;
+    height: auto;
 }
+
+.hover-img {
+    position: absolute;
+    height: 344px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 8px;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, 0.601);
+}
+
+.view-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 h1 {
     font-size: 1.5em;
